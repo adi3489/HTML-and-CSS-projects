@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  background: aqua;
+  height: 50px;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: antiquewhite;
+}
+.headingleft {
+  font-size: 40px;
+}
+.headingright {
+  font-size: 40px;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  left: 70px;
+}
+.h {
+  text-decoration: none;
+}
+.footerbox {
+  background: yellowgreen;
+  text-decoration: azure;
+  text-align: center;
+  height: 40px;
+}
+p {
+  font-size: 30px;
+}
+.contentbox {
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 3rem;
+  box-shadow: 3px 3px 30px black;
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightbox img {
+  height: 300px;
+  border-radius: 20px;
+  transition: all 0.6s linear 0s;
+}
+.rightbox:hover {
+  transform: scale(1.1);
+}
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.leftbox h2 {
+  font-size: 2rem;
+}
+.ingbox {
+  font-size: 1.5rem;
+}
+.recipebox {
+  font-size: 1rem;
+}
+.rightbox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+}
+.rightbox .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(36, 34, 34, 0.713);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.rightbox .overlay span {
+  color: white;
+  font-size: 1.2rem;
+}
+.rightbox:hover .overlay {
+  opacity: 1;
+}
